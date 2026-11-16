@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#075b3b">
+  <meta name="description" content="Panduan belajar shalat, bacaan, gerakan, dan doa.">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+  <title>Panduan Shalat Lengkap</title>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#beranda" aria-label="Panduan Shalat Lengkap">
+    <span class="brand-mark">☪</span><span><b>PANDUAN SHALAT<br> LENGKAP</b><small>Belajar · Memahami · Mengamalkan</small></span>
+  </a>
+  <div class="head-tools">
+    <label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="Cari materi shalat..." aria-label="Cari materi"><button id="searchBtn">Cari</button></label>
+    <button class="outline" data-page="bookmark">☆ Bookmark <span id="bookmarkCount">0</span></button>
+    <button class="icon-btn" id="themeQuick" title="Mode gelap">◐</button>
+  </div>
+</header>
+<nav class="nav" aria-label="Navigasi utama">
+  <button class="nav-toggle" id="navToggle">☰ Menu</button>
+  <div class="nav-links" id="navLinks">
+    <button class="nav-link active" data-page="beranda">⌂ Beranda</button>
+    <button class="nav-link" data-page="tata-cara">☪ Tata Cara Shalat</button>
+    <button class="nav-link" data-page="bacaan">▤ Bacaan Shalat</button>
+    <button class="nav-link" data-page="niat">✧ Niat 5 Waktu</button>
+    <button class="nav-link" data-page="surat">۞ Surat Pendek</button>
+    <button class="nav-link" data-page="doa">☼ Doa & Zikir</button>
+    <button class="nav-link" data-page="kuis">? Kuis</button>
+    <button class="nav-link" data-page="pengaturan">⚙ Pengaturan</button>
+  </div>
+</nav>
+<main id="app" tabindex="-1">
+  <section class="hero">
+    <div class="hero-copy">
+      <span class="eyebrow">PUSAT BELAJAR IBADAH</span>
+      <h1>Panduan Shalat<br><em>Lengkap</em></h1>
+      <p>Belajar tata cara shalat dengan mudah, bertahap, dan interaktif untuk semua usia.</p>
+      <button class="primary" data-page="tata-cara">Mulai Belajar <span>→</span></button>
+    </div>
+    <div class="hero-photo" role="img" aria-label="Foto referensi gerakan sujud">
+      <img src="/assets/images/sujud-referensi.jpg" alt="Contoh posisi sujud di dalam masjid">
+      <div class="photo-caption">Panduan gerakan shalat</div>
+    </div>
+  </section>
+  <div id="pageContent"></div>
+</main>
+<footer><div class="footer-inner"><b>☪ PANDUAN SHALAT LENGKAP</b><span>Belajar dengan ilmu · Beribadah dengan khusyuk</span><button id="backTop" class="outline">↑ Kembali ke atas</button></div><small>Materi edukasi. Untuk ketepatan praktik, cocokkan dengan guru agama dan rujukan fikih yang dipercaya.</small></footer>
+<div id="audioDock" aria-label="Pemutar audio"></div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<dialog id="detailDialog"><button class="dialog-close" id="closeDialog" aria-label="Tutup">×</button><div id="dialogBody"></div></dialog>
+<script src="/data/bacaan.js"></script>
+<script src="/data/gerakan.js"></script>
+<script src="/data/doa.js"></script>
+<script src="/data/surat.js"></script>
+<script src="/script.js"></script>
+</body></html>

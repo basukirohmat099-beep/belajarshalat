@@ -1,0 +1,16 @@
+{
+  "name": "Panduan Shalat Lengkap",
+  "short_name": "Panduan Shalat",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f7f0",
+  "theme_color": "#075b3b",
+  "icons": [
+    {
+      "src": "/assets/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
